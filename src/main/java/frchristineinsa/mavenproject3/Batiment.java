@@ -27,6 +27,6 @@ public abstract class Batiment {
         return listeNiveaux;
     }
     
-    // test
+    
     
 }
