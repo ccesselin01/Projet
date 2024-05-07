@@ -52,20 +52,23 @@ public class SceneSecond {
         submitButton.setOnAction(e -> {
             String selectedType = typeToggleGroup.getSelectedToggle() == maisonRadioButton ? "Maison" : "Immeuble";
             int selectedEtages = etagesComboBox.getValue();
-            if selectedType = "Maison" { //chatgpt
+            if (selectedType.equals("Maison")) {
                 Maison andré = new Maison(selectedEtages) ;  
+                handleSubmit(budgetField.getText(), heightField.getText(), secondStage, andré);
+
             }
-            ifselectedType = "Immeuble" {
-                Immeuble Stan = new Immeuble(selectedEtages);
+            if(selectedType.equals("Immeuble")) {
+                Immeuble stan = new Immeuble(selectedEtages);
+                handleSubmit(budgetField.getText(), heightField.getText(), secondStage, stan);
+
         }
             
             /*Batiment monBatiment = new Batiment(); // à modifier
             monBatiment.setType(selectedType);
             monBatiment.setNbetages(selectedEtages);*/
             
-            handleSubmit(budgetField.getText(), heightField.getText(), secondStage, monBatiment);
             // Afficher les informations sélectionnées (vous pouvez ajuster cela selon votre besoin)
-            System.out.println("Type de bâtiment : " + selectedType);
+            // System.out.println("Type de bâtiment : " + selectedType);
             System.out.println("Nombre d'étages : " + selectedEtages);
              
         });
