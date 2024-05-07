@@ -55,7 +55,7 @@ public class Piece {
         }
     }
     
- // méthode pour calculer surface du sol ? comment accéder aux coins des murs? le montant des revêtements?
+// méthode pour calculer surface du sol ? comment accéder aux coins des murs? le montant des revêtements?
    
 // test ci dessous marche pas 
     public static Piece pieceTest(){
