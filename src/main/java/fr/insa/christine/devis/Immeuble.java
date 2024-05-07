@@ -12,8 +12,10 @@ import java.util.List;
  */
 public class Immeuble extends Batiment{
     
-    public Immeuble(String idBatiment, List<Niveau> listeNiveaux) {
-        super(idBatiment, listeNiveaux);
+    public Immeuble( List<Niveau> listeNiveaux,int nbetages) {
+        super(listeNiveaux, nbetages);
     }
-    
+    public Immeuble (int nbetages){
+        super(nbetages);
+    }
 }

@@ -4,6 +4,7 @@
  */
 package fr.insa.christine.devis;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,11 +13,11 @@ import java.util.List;
  */
 public class Maison extends Batiment {
 
-    public Maison(String idBatiment, List<Niveau> listeNiveaux) { // on admet nb niveaux = 1 ou pas? sinon aucune différence avec immeuble
-        super(idBatiment, listeNiveaux);
+    public Maison(List<Niveau> listeNiveaux, int nbetages) { // on admet nb niveaux = 1 ou pas? sinon aucune différence avec immeuble
+        super(listeNiveaux, nbetages);
     }
-
     
-    
-    
+    public Maison (int nbetages){
+        super(nbetages);
+    }
 }

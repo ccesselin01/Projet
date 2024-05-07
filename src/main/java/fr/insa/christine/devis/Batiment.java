@@ -4,6 +4,7 @@
  */
 package fr.insa.christine.devis;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,12 +13,39 @@ import java.util.List;
  */
 public abstract class Batiment {
     private String idBatiment ;
-    private List<Niveau> listeNiveaux ;
+    List<Niveau> listeNiveaux ;
+   
+    private int nbetages ;
 
-    public Batiment(String idBatiment, List<Niveau> listeNiveaux) {
+    public Batiment(List<Niveau> listeNiveaux, int nbetages) {
+        //this.idBatiment = idBatiment;
+        this.listeNiveaux = listeNiveaux;
+        this.nbetages = nbetages ;
+    }
+    public Batiment(int nbetages){
+        listeNiveaux = new ArrayList<>();
+        this.nbetages = nbetages ;
+    }
+
+    public void setNbetages(int nbetages) {
+        this.nbetages = nbetages;
+    }
+
+    public int getNbetages() {
+        return nbetages;
+    }
+
+    
+
+    /*public void setIdBatiment(String idBatiment) {
         this.idBatiment = idBatiment;
+    }*/
+
+    public void setListeNiveaux(List<Niveau> listeNiveaux) {
         this.listeNiveaux = listeNiveaux;
     }
+
+    
 
     public String getIdBatiment() {
         return idBatiment;

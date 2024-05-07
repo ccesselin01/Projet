@@ -34,6 +34,19 @@ public class Niveau {
         return listeApparts;
     }
 
+    public void setIdNiveau(int idNiveau) {
+        this.idNiveau = idNiveau;
+    }
+
+    public void setHauteurSousPlafond(double hauteurSousPlafond) {
+        this.hauteurSousPlafond = hauteurSousPlafond;
+    }
+
+    public void setListeApparts(List<Appartement> listeApparts) {
+        this.listeApparts = listeApparts;
+    }
+    
+
     @Override
     public String toString() {
         return "Niveau{" + "idNiveau=" + idNiveau + ", hauteurSousPlafond=" + hauteurSousPlafond + ", listeApparts=" + listeApparts + '}';
